@@ -1,10 +1,62 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="./public/logo.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
+    <title>DineOut - Food Order Management</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+        background-color: #1d1d1d;
+        height: 100vh;
+        overflow: hidden;
+      }
+
+      select {
+        appearance: none;
+        accent-color: #ff602c;
+        background-color: #1d1d1d;
+        min-width: 100px;
+        border: none;
+        outline: none;
+        border-radius: 10px;
+        padding: 4px;
+      }
+
+      .items-container {
+        max-height: 250px;
+        overflow-y: auto;
+      }
+
+      .reports-container {
+        max-height: 340px;
+        overflow-y: auto;
+      }
+
+      /* Custom scrollbar */
+      ::-webkit-scrollbar {
+        width: 6px;
+      }
+
+      ::-webkit-scrollbar-track {
+        background: rgba(89, 86, 86, 0.2);
+        border-radius: 10px;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background: rgba(255, 96, 44, 0.5);
+        border-radius: 10px;
+      }
+
+      ::-webkit-scrollbar-thumb:hover {
+        background: rgba(255, 96, 44, 0.8);
+      }
+    </style>
   </head>
   <body>
     <div id="root"></div>
