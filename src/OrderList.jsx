@@ -14,7 +14,7 @@ function OrderList({ orders, filter, setFilter, onDeliver, onDelete }) {
         <h2 className="text-xl font-bold mb-4">Order Reports</h2>
         <div className="flex gap-4 items-center">
           <FilterIcon />
-          <select value={filter} onChange={(e) => setFilter(e.target.value)}>
+          <select value={filter} className="outline-none bg-zinc-900" onChange={(e) => setFilter(e.target.value)}>
             <option value="All">All</option>
             <option value="Pending">Pending</option>
             <option value="Delivered">Delivered</option>
